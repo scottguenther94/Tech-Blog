@@ -1,0 +1,16 @@
+<!--uses built-in handlebar #each helper to render all the posts separately-->
+{{#each posts as |post| }}
+<div class="card post">
+  <div class="card-body">
+    <div class="card-title d-flex justify-content-between flex-row">
+      <h2 class ="column">
+        <a href="post/{{id}}">{{title}}</a>
+      </h2>
+      <p class="card-subtitle text-muted column">Posted by {{user.username}} <br> on {{format_date created_at}}</p>
+    </div>
+    <p class="card-body">
+      {{post_text}}
+    </p>
+  </div>
+</div>
+{{/each}}

@@ -1,0 +1,53 @@
+nav {
+    background-color: #CDC392;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
+body {
+    background-color: #E8E5DA;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    padding: 10px;
+    border: 5px solid #304C89;
+    background-color: #9EB7E5;
+}
+
+.form-group {
+    padding: 5px;
+}
+
+.card {
+    border: 10px solid #304C89;
+    margin: 20px;
+    background-color: #9EB7E5;
+}
+
+.card-title {
+    border: 5px solid #304C89;
+    padding: 5px;
+    background-color: #648DE5;
+    color: #304C89;
+}
+
+a {
+    color: #304C89;
+    text-decoration: inherit;
+}
+
+button {
+    margin: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+}
