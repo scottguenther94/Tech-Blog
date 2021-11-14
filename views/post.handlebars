@@ -10,7 +10,6 @@
   </div>
 </div>
 
-<!--uses built-in handlebar #each helper to render all the comments on a specific post separately-->
 {{#each comments as |comment|}}
 <div class="card comment">
   <section class="card-body">
@@ -24,7 +23,6 @@
 </div>
 {{/each}}
 
-<!--uses the built-in handlebar #if helper so comment form is only visible if user is logged in-->
 {{#if logged_in}}
 <div class="container">
   <form class="comment-form col-md-6">

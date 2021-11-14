@@ -1,4 +1,3 @@
-// updates a specific post based on user's changes to title and post text
 const editPostHandler = async (event) => {
     event.preventDefault();
     console.log('editPostHandler fired');
@@ -27,7 +26,6 @@ const editPostHandler = async (event) => {
     }
 };
 
-// deletes a post when user clicks the delete post button
 const deletePostHandler = async (event) => {
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1

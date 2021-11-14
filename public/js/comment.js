@@ -1,4 +1,4 @@
-// creates a new comment under the specified post
+
 const commentFormHandler = async (event) => {
     event.preventDefault();
 

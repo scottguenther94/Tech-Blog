@@ -1,4 +1,3 @@
-// logs out a user when the logout link is clicked
 const logout = async () => {
   const response = await fetch('/api/users/logout', {
     method: 'POST',

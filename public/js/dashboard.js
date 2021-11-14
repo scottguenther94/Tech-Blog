@@ -1,10 +1,9 @@
-// function to display new post form if the display new post form button is clicked
+
 function displayNewPostForm() {
   document.querySelector('#new-post-form').style.display = 'block';
   document.querySelector('#displayNewPostFormButton').style.display = 'none';
 }
 
-// creates a new post if user enters a title, post text, and clicks the submit button
 const newPostHandler = async (event) => {
   event.preventDefault();
 

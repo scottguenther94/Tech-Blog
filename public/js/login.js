@@ -1,4 +1,3 @@
-// logs in a user when a valid username and the corresponding password is entered
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
