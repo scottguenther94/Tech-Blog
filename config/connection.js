@@ -1,11 +1,10 @@
-// imports sequelize constructor and dotenv for local environmental variables
+// Sequelize and dotenv
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-// creates connection to database
 let sequelize;
 
-// connection will use JawsDB if deployed on Heroku
+//Using JawsDB with Heroku
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {

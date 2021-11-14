@@ -1,11 +1,9 @@
-// imports sequelize model, datatypes, and connection to database
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// creates comment model
 class Comment extends Model {}
 
-// defines mappings between comment model and its table columns
+
 Comment.init(
     {
         id: {
@@ -44,5 +42,5 @@ Comment.init(
     }
 )
 
-// exports the comment model
+
 module.exports = Comment;

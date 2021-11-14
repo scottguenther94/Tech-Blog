@@ -1,11 +1,9 @@
-// imports router from express
 const router = require('express').Router();
-// imports comment model from models folder
+
 const { Comment } = require('../../models');
-// imports withAuth middleware from utils folder
+
 const withAuth = require('../../utils/auth');
 
-// route to retrieve all comments
 router.get('/', (req, res) => {
   Comment.findAll()
     .then(dbCommentData => res.json(dbCommentData))
@@ -15,7 +13,6 @@ router.get('/', (req, res) => {
     });
 });
 
-// route to create a new comment
 router.post('/', withAuth, (req, res) => {
   if (req.session) {
     Comment.create({
@@ -31,7 +28,6 @@ router.post('/', withAuth, (req, res) => {
   }
 });
 
-// route to delete an existing comment
 router.delete('/:id', withAuth, (req, res) => {
   Comment.destroy({
     where: {

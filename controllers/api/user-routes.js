@@ -1,11 +1,9 @@
-// imports router from express
 const router = require('express').Router();
-// imports user, post, and comment models from models folder
+
 const { User, Post, Comment } = require('../../models');
-// imports withAuth middleware from utils folder
+
 const withAuth = require('../../utils/auth');
 
-// route to retrieve all users
 router.get('/', (req, res) => {
   User.findAll({
     attributes: { exclude: ['password'] }
@@ -17,7 +15,7 @@ router.get('/', (req, res) => {
     });
 });
 
-// route to retrieve a specific user
+
 router.get('/:id', (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
@@ -52,7 +50,6 @@ router.get('/:id', (req, res) => {
     });
 });
 
-// route to create a new user
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
@@ -68,7 +65,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-// route to login a user
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { username: req.body.username } });
@@ -101,7 +97,6 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// route to logout a user
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
