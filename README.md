@@ -1,7 +1,7 @@
-# Model View Controller Tech Blog
+# Tech Blog
             
 ## Description
-a CMS-style blog where developers can publish their blog posts and comment on other developers’s posts.
+An app that allows users to post blog entries, comment on posts, and delete entries. 
 
 Technologies used:
 
@@ -13,4 +13,10 @@ Technologies used:
 
                     
 ## Usage
-In order to use all the features of the blog, users have to first sign up by clicking the login tab in the navigation bar and then clicking the sign up link below the login form. Newly created user accounts are automatically logged in. Returning users can access their accounts by entering their username and password in the login page. When users create an account or log in with a previously made account, they are automatically redirected to the homepage. The homepage displays all previously made posts, arranged from newest to oldest. Clicking on the title of a post displays the post and the comments that others have left if there are any. Users that do not create an account or log in with a previously made account are allowed to view posts and comments, but cannot leave their own comments. Logged in users also have access to their dashboards where they can create new posts by clicking the button to create a new post then writing the title and text for their post. On the dashboard, users can also view, update, or delete any of their previous posts by clicking on the title of a post. If a user clicks the dashboard tab while not logged in they will be redirected to the login page. If a user is idle on the website for five minutes or more, they can still view posts and comments, but will have to log in once more to create, update, or delete a post.
+Users must first signup for an account to be able to post blog entries and leave comments. To do this, upon entering the site, click the "Login" button on the top right. From here, select "Don't have an account? Sign up here!" and it will take you to a form where you can specific your username and password. Once you have access to the website, visit the Dashboard page where you can create new posts. New posts will show up on your dashboard as well as on the home page. From the dashboard, you can also edit or delete posts you've already created. If you wish to comment on a post, find the post on the home page, click the title, and enter in your comment. 
+
+## Screenshots
+![screenshot](/images/ss1.png)
+![screenshot](/images/ss2.png)
+![screenshot](/images/ss3.png)
+![screenshot](/images/ss4.png)
